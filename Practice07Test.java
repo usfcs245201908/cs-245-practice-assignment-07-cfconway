@@ -80,6 +80,7 @@ public class Practice07Test {
 			for (int i = 0; i < movies.length; i++) {
 				list.add(i, movies[i]);
 			}
+
 			if (list.size() == movies.length && list.get(41).equals(movies[41])) {
 				// First movie I saw!
 				return true;
@@ -156,7 +157,7 @@ public class Practice07Test {
 		} else {
 			System.out.println("[    ] Failed multiple store/retrieve/remove test (LinkedList)");
 		}
-		
+
 		list = new ArrayList<String>();
 		if (increaseCapacityTest(list)) {
 			grade += 20;
